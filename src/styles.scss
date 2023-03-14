@@ -1,0 +1,21 @@
+/*
+  index.scss
+*/
+
+// Variables.
+$background_color: #fdfdfd;
+$accent_color: #3b3bf8;
+$mobile_width: 600px;
+
+// Function for converting a px based font-size to rem.
+// Default font size on html element is 100%, equivalent to 16px.
+@function calculateRem($size) {
+  $remSize: calc($size / 16px);
+  @return #{$remSize}rem;
+}
+
+// Mixin that will include the fall back px declaration as well as the calculated rem value.
+@mixin fontSize($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
