@@ -4,12 +4,15 @@
 
 @use "../../styles.scss";
 
+body {
+  background: styles.$background_color;
+}
 .Article {
 
   max-width: 600px;
   margin: auto;
   padding: 25px 25px 100px 25px;
-  background: styles.$background_color;
+  background: styles.$article_color;
   border-left: 1px solid rgba(0, 0, 0, 0.1);
   border-right: 1px solid rgba(0, 0, 0, 0.1);
   width: 100%;
